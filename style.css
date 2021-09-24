@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@600&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
+    display: flex;
+    font-family: 'Exo 2', sans-serif;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.container{
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 300px;
+}
+
+.title{
+    margin: 0;
+}
+
+.subtitle{
+    display: inline-block;
+    margin: 5px 0 20px;
+    opacity: 0.8;
+}
+
+.header{
+    background-color: #000000;
+    color: #fff;
+    padding: 30px 20px;
+}
+
+.header input{
+    background-color: rgb(255 255 255 / 30%);;
+    border: 0;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 15px;
+    width: 100%;
+}
+
+.header input:focus{
+    outline: none;
+}
+
+.user-list{
+    background-color: #fff;
+    margin: 0;
+    list-style-type: none;
+    /* padding: 0; */
+    padding: 10px 30px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.user-list img{
+    border-radius: 50%;
+    object-fit: cover;
+    height: 50px;
+    width: 50px;
+}
+
+.user-list .user-info h4{
+    margin: 0 0 2px;
+}
+
+.user-list .user-info p{
+    font-size: 12px;
+    margin: 0 0 25px;
+}
+
+.user-list li.hide{
+    display: none;
+}
+
+.user-list li:not(:last-of-type){
+    border-bottom: 1px solid #eee;
+}
